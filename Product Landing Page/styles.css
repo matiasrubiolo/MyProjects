@@ -1,0 +1,185 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    position: fixed;
+}
+#header-img{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#nav-bar li{
+    padding: 10px 20px;
+    list-style: none;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.main{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main h2,#form{
+    margin-bottom: 20px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#email{
+    width: 200px;
+    height: 30px;
+    margin-bottom:20px ;
+}
+#submit{
+    padding:.3em .8em;
+    border: none;
+    background-color: #f1c40f;
+}
+#submit:hover{
+    background-color: #f1b50f;
+}
+
+#Features{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.divider{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3em;
+    justify-content: center;
+    
+}
+.icon{
+  margin-right:30px ;
+  align-items: center; 
+}
+i{
+    width:40px;
+    padding:10px 20px;
+    color: #f1b50f;
+}
+
+#How_It_Works{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video{
+    height: 315px;
+    width: 560px;
+    display: flex;
+}
+
+#Pricing{
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+.name-product{
+    width: 200px;
+    background-color: #eee;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.info-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.info-product h2{
+    margin: 10px;
+}
+.info-product button{
+    margin: 20px; 
+    padding: .8em 2em;
+    background-color: #f1c40f;
+    border: none;
+}
+.info-product button:hover{
+    background-color:#f1b50f ;
+}
+
+footer {
+    width: 70%;
+    margin-top: 30px;
+    background-color: #eee;
+    padding: 20px;
+    bottom: 0;
+}
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 75%;
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+@media (max-width: 700px){
+    .wrapper{
+        width: 599px;
+        height: 720px;
+    }
+    #header{
+        width: 599px;
+        flex-direction: column;
+    }
+    .main{
+        margin-top: 100px;
+    }
+
+    #Pricing{
+        flex-direction: column;
+    }
+    .product{
+        margin-bottom: 20px;
+    }
+}
